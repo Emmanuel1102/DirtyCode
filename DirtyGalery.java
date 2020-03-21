@@ -1,20 +1,8 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.*;
 
-import java.awt.Image;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-
-import java.applet.Applet;
 public class DirtyGalery  extends JFrame{
 	
 	 //Distribucion que ayudara a crear la galeria
@@ -45,7 +33,7 @@ public class DirtyGalery  extends JFrame{
 			cabecera = new JPanel();
 			cabecera.setBackground(Color.BLACK);
 			cabecera.setBounds(0,0,1366,136);
-			setTitle("www.cineito.com.mx");
+			setTitle("Dirty_Galery");
 			setSize(1366,768);
 			setLayout(null);
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -97,7 +85,7 @@ public class DirtyGalery  extends JFrame{
 			 la =new JLabel[ nImagenes.length]; 
 			 ap=new JPanel[icons.length];   
 			 ImagenPanel.setLayout(Imagenes);
-	        //algoritmo que añade paneles y etiquetas al arreglo	
+	        //algoritmo que aÃ±ade paneles y etiquetas al arreglo	
 			 for(int z=0; z<nImagenes.length;z++){
 				    la[z]=new JLabel(icons[z]); 
 				    ap[z ]=new JPanel(); 
@@ -105,7 +93,7 @@ public class DirtyGalery  extends JFrame{
 				    ap[z].setBackground(Color.BLACK);
 				    ImagenPanel.add(ap[z],String.valueOf(z));
 				}
-	         //añadiendo la funcion a lo botones que recorre el arreglo nImagenes
+	         //aÃ±adiendo la funcion a lo botones que recorre el arreglo nImagenes
 			 adelante.addActionListener(new ActionListener() {
 				 public void actionPerformed(ActionEvent arg0) {
 				 if (contar < nImagenes.length) {
@@ -132,7 +120,7 @@ public class DirtyGalery  extends JFrame{
 			background.setBackground(Color.BLACK);
 			background.setOpaque(true);
 			
-			//Añadiendo los componentes 
+			//AÃ±adiendo los componentes 
 			background.add(cabecera);
 			background.add( botonAtras);
 			background.add(botonAdelante);
