@@ -8,7 +8,9 @@ public class Diccionario {
     static FileWriter fileWriter = null;
     static BufferedWriter buff = null;
     public static String[] generarContra(int CantidadContra){
-        
+        //Autores: Alexis Hernandez y Emmanuel Martinez
+        //DirtyCode
+        //Codigo abierto
         System.out.println("Ingresa  palabra");
         Scanner sc1 = new Scanner(System.in);
         String escaner1 = sc1.next();
